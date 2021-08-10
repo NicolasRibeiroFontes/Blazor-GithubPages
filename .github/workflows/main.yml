@@ -13,7 +13,7 @@ jobs:
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v1.8.1
       with:
-          dotnet-version: 5.0
+          dotnet-version: 5.0.x
       # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
       run: dotnet publish Blazor-GithubPages/Blazor-GithubPages.csproj -c Release -o release --nologo   
